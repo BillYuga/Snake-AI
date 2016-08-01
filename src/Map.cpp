@@ -1,6 +1,7 @@
 #include "Map.h"
 #include "GameCtrl.h"
 #include "Convert.h"
+#include "Console.h"
 #include <algorithm>
 
 using std::vector;
@@ -12,6 +13,7 @@ Map::Map(const size_type &rowCnt_, const size_type &colCnt_)
 }
 
 Map::~Map() {
+    //Console::write("Map destroyed.");
 }
 
 void Map::init() {
